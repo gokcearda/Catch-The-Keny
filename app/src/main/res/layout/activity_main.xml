@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timeText2"
+        android:layout_width="142dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:text="Time: 15"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="141dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="50dp"
+        android:text="Score: 0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText2" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="328dp"
+        android:layout_height="484dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText"
+        tools:ignore="MissingConstraints">
+
+
+        <!--1. Satır kennyler -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="109dp"
+            android:layout_height="159dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="109dp"
+            android:layout_height="159dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="109dp"
+            android:layout_height="159dp"
+            android:onClick="increaseScore"
+
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/logo" />
+
+        <!-- 2. Satır Kennyler -->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="109dp"
+            android:layout_height="159dp"
+            android:onClick="increaseScore"
+
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="109dp"
+            android:layout_height="159dp"
+            android:onClick="increaseScore"
+
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="109dp"
+            android:layout_height="159dp"
+            android:onClick="increaseScore"
+
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/logo" />
+
+        <!-- 3. Satır Kennyler -->
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="109dp"
+            android:layout_height="159dp"
+            android:onClick="increaseScore"
+
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="109dp"
+            android:layout_height="159dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="109dp"
+            android:layout_height="159dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/logo" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
